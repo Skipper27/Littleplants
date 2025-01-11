@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Plants</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="cabecera">
+    <h1 class="cabecera__titulo">Little Plants</h1>
+    <p class="cabecera__subtitulo">La naturaleza en tus manos</p>
+  </header>
+
+  <div class="container">
+    <div class="products">
+      <h2 class="PRODUCTOS">PRODUCTOS:</h2>
+      <div id="productGrid" class="product-grid"></div>
+      <button id="eliminarTodoBtn" class="btn btn-clear">Eliminar Todo</button>
+    </div>
+
+    <div class="form-container">
+      <h2>AGREGAR PRODUCTO:</h2>
+      <form id="productForm">
+        <input type="text" id="productName" placeholder="Nombre del producto..." list="productLista">
+        <datalist id="productLista">
+          <option value="Arbolnavidad" data-price="10.000" data-img="assets\productos\arbol navida.jpg"></option>
+          <option value="Matera + vela" data-price="25.000" data-img="assets/productos/matera+vela.jpg"></option>
+          <option value="Natalia" data-price="30.000" data-img="assets/productos/natalia.jpg"></option>
+          <option value="Burbujas" data-price="35.000" data-img="assets/productos/burbujas.jpg"></option>
+          <option value="Cactus matera" data-price="35.000" data-img="assets/productos/cactusmatera.jpg"></option>
+          <option value="Suculenta" data-price="35.000" data-img="assets/productos/suculenta.jpg"></option>
+          <option value="Florero azul" data-price="35.000" data-img="assets/productos/azul.jpg"></option>
+          <option value="Florero rosado" data-price="35.000" data-img="assets/productos/rosada.jpg"></option>
+          <option value="Florero amarillo" data-price="35.000" data-img="assets/productos/amarilla.jpg"></option>
+          <option value="Corazón" data-price="35.000" data-img="assets/productos/corazon.jpg"></option>
+        </datalist>
+        <input type="text" id="productPrice" placeholder="Precio del producto..." readonly>
+        <div>
+          <button type="submit" class="btn btn-submit">Agregar</button>
+          <button type="reset" class="btn btn-clear">Limpiar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    DESARROLLADO POR Julián Muñoz <br> ALURA LATAM - 2024
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
